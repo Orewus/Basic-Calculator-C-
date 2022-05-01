@@ -1,0 +1,59 @@
+#include <iostream>
+#define _USE_MATH_DEFINES
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    double a, multiply, z;
+    cout << "Please enter two numbers \n";
+    cin >> a>>z;
+    multiply = a*z;
+
+    cout <<"The product is:"<< multiply << endl;
+    
+    double d, divide, e;
+    cout<< "Please enter two numbers \n";
+    cin>>d>>e;
+    divide = d/e;
+
+    cout<<"The quotient is:"<< divide << endl;
+
+    double q,s, sum;
+    cout<<"Please enter two numbers \n";
+    cin >> q>> s;
+    sum= q+s;
+    cout<<"The Sum is:"<<sum<<endl;
+
+    double w, u, subtract;
+    cout<<"Please enter two numbers \n";
+    cout<<"Sorry for asking for multiple numbers. Pardonnez-moi \n";
+    cin>>w>>u;
+    subtract= w-u;
+    cout<<"The difference is:"<<subtract<<endl;
+    
+    double i, circle;
+    /*I don't understand what costexpr means but I found it on stackoverflow and it works. Just realised that it means constant*/
+    const auto PI = 3.14159265358979323846;
+    cout<<"Welcome to geometric calculator. We would be calculating the area of a circle \n";
+    cin>>(i);
+    circle= 2*PI*i*i;
+    cout<<"The Area of circle with radius "<<i<<" is "<<circle<<endl;
+    
+    double b, h, triangle;
+    cout<<"If you want to calculate the area of a triangle, input two numbers \n";
+    cin>>b>>h;
+    triangle=0.5*b*h;
+    cout<<"The area of the traingle based on "<<b<< " and " <<h<<" is "<<triangle<<endl;
+    
+    double o, square;
+    cout<<"If you want to calculate the area of a square, input a number or end the program \n";
+    cin>>o;
+    square= o*o;
+    cout<<"The area of a square is "<<square<<endl;
+    
+    cout<<"Thank you for using this program. Hope you enjoyed it \n";
+
+    return 0;
+}
+
